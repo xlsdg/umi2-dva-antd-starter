@@ -13,7 +13,7 @@ function Body(props) {
   // console.log(props);
   return (
     <div className={styles.container}>
-      <Button type="primary">Index</Button>
+      <Button type="primary">Home</Button>
     </div>
   );
 }
