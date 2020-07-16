@@ -1,0 +1,59 @@
+{
+  "dependencies": {
+    "@ant-design/icons": "^4.2.1",
+    "antd": "^4.4.2",
+    "classnames": "^2.2.6",
+    "dva": "next",
+    "fast-deep-equal": "^3.1.3",
+    "lodash": "^4.17.19",
+    "moment": "^2.27.0",
+    "path-to-regexp": "^6.1.0",
+    "prop-types": "^15.7.2",
+    "re-reselect": "^4.0.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "reselect": "^4.0.0",
+    "umi-request": "^1.3.5"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^9.1.1",
+    "@commitlint/config-conventional": "^9.1.1",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-lodash": "^3.3.4",
+    "cross-env": "^7.0.2",
+    "eslint": "^7.4.0",
+    "eslint-config-alloy": "^3.7.3",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.3",
+    "eslint-plugin-react-hooks": "^4.0.8",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "lodash-webpack-plugin": "^0.11.5",
+    "prettier": "^2.0.5",
+    "stylelint": "^13.6.1",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-recommended": "^3.0.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-prettier": "^1.1.2",
+    "umi": "^2.13.13",
+    "umi-plugin-react": "^1.15.8"
+  },
+  "engines": {
+    "node": ">=10.13.0"
+  },
+  "homepage": "https://xlsdg.github.io/umi2-dva-antd-starter",
+  "private": true,
+  "scripts": {
+    "analyze": "cross-env ANALYZE=1 umi build",
+    "build": "cross-env UMI_ENV=prod umi build",
+    "dev": "cross-env UMI_ENV=local umi build",
+    "lint": "eslint --ext .jsx,.js src",
+    "lint:fix": "eslint --fix --ext .jsx,.js src && npm run lint:style",
+    "lint:style": "stylelint --fix \"src/**/*.less\" --syntax less",
+    "prettier": "prettier --write './src/**/*.{js,jsx,ts,tsx,less,scss,css}'",
+    "start": "umi dev",
+    "test": "umi test"
+  },
+  "version": "0.1.0"
+}

@@ -1,0 +1,62 @@
+{
+  "env": {
+    "amd": false,
+    "applescript": false,
+    "atomtest": false,
+    "browser": true,
+    "commonjs": false,
+    "embertest": false,
+    "es6": true,
+    "greasemonkey": false,
+    "jasmine": false,
+    "jest": false,
+    "jquery": false,
+    "meteor": false,
+    "mocha": false,
+    "mongo": false,
+    "nashorn": false,
+    "node": true,
+    "phantomjs": false,
+    "prototypejs": false,
+    "protractor": false,
+    "qunit": false,
+    "serviceworker": false,
+    "shared-node-browser": false,
+    "shelljs": false,
+    "webextensions": false,
+    "worker": false
+  },
+  "extends": ["alloy", "alloy/react", "plugin:prettier/recommended", "prettier/react"],
+  "globals": {
+    "BASE_HOST": true,
+    "AUTH_HOST": true
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": ["react-hooks", "prettier"],
+  "root": true,
+  "rules": {
+    "prettier/prettier": "error",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/forbid-component-props": [
+      "error",
+      {
+        "forbid": ["id", "style"]
+      }
+    ],
+    "react/forbid-dom-props": [
+      "error",
+      {
+        "forbid": ["id", "style"]
+      }
+    ],
+    "no-invalid-this": "off"
+  }
+}
